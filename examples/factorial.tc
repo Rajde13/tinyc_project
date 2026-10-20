@@ -1,0 +1,8 @@
+// Factorials 1! .. 10!
+let n = 1;
+let result = 1;
+while (n <= 10) {
+    result = result * n;
+    print result;
+    n = n + 1;
+}

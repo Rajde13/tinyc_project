@@ -1,0 +1,7 @@
+   let x = 10;
+   let y = x * 3 + 2;
+   if (y > 30) {
+       print y;
+   } else {
+       print 0;
+   }

@@ -1,0 +1,12 @@
+// Compare:  python main.py examples/optimizer_demo.tc --dump-bytecode --no-run
+//           python main.py examples/optimizer_demo.tc --dump-bytecode --no-run --no-opt
+let seconds = 60 * 60 * 24;     // folded to 86400 at compile time
+print seconds;
+if (1 < 2) {                    // condition is constant, so the else branch disappears
+    print 100 + 1;
+} else {
+    print 999;
+}
+while (0) {                     // never runs, removed entirely
+    print 12345;
+}
